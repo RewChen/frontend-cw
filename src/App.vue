@@ -1,8 +1,7 @@
 <script setup>
 import { ref, reactive, onMounted } from 'vue'
 
-// API base: set VITE_API_URL in your Vite env or default to wrangler dev host
-const API_BASE = import.meta.env.VITE_API_URL
+const API_BASE = window.__ENV__.API_BASE
 
 const items = ref([])
 const showList = ref(true)

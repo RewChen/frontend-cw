@@ -1,5 +1,27 @@
-# Vue 3 + Vite
+# Frontend for Cloudflare Worker CRUD App
+## Setup Instructions
+1.
+```
+git clone https://github.com/Korrawit-aoongern/frontend-cw
+```
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+2.
+```
+cd frontend-cw
+```
 
-Learn more about IDE Support for Vue in the [Vue Docs Scaling up Guide](https://vuejs.org/guide/scaling-up/tooling.html#ide-support).
+3.
+```
+docker pull yuzuruorensu/cw-crud:v1f
+```
+
+4.
+```
+docker run -p 8080:80 -e API_BASE=https://<your-cloudflare-worker-url-api>.dev yuzuruorensu/cw-crud:v1f
+```
+
+5.
+```
+https://localhost:8080
+```
+
